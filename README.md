@@ -6,7 +6,7 @@ Add multiple targets to log on without having to visit all code.
 
 ## How to use
 
-Add the wanted log function where you want. By default the log functions will automatically log using `android.util.Log`
+Add the wanted log function where you want. By default the log functions will automatically log using `android.util.Log`.
 
 ```kotlin
 class MainActivity : AppCompatActivity() {
@@ -31,8 +31,9 @@ class MainActivity : AppCompatActivity() {
 ### Customizing a logger
 
 To add another log receiver, you can implement either `Logger.Local` or `Logger.Remote`.
-After creating the custom logger instance, simply register it using `registerLogger(loggerInstance)`
-To unregister a logger, call `unregisterLogger(logerInstance)`
+After creating the custom logger instance, simply register it using `registerLogger(loggerInstance)`.
+
+To unregister a logger, call `unregisterLogger(logerInstance)`.
 
 ```kotlin
 class ToastLogger(private val context: Context): Logger.Local {
