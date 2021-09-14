@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Logger Sample</string>
+    <string name="android_logger">Android log</string>
+    <string name="toast_logger">Toast</string>
+    <string name="print_logger">Print</string>
+    <string name="log_locally">Log locally only</string>
+    <string name="log">Log</string>
+    <string name="remote_logger">Remote\n(it\'ll show a toast, but it is implemented as a remote logger)</string>
+</resources>
