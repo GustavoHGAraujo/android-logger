@@ -16,7 +16,7 @@ object ThirdParty {
 		const val googleServices = "4.3.8"
 
 		const val facebook = "5.15.3"
-		const val gradleVersion = "4.2.1"
+		const val gradleVersion = "7.0.2"
 
 		const val jUnit = "4.13.2"
 
