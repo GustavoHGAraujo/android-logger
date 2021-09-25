@@ -1,2 +1,7 @@
 jdk:
   - openjdk11
+# install:
+#   - echo "Running custom build (trying at least)"
+#   - ./gradlew clean
+#   - ./gradlew build
+#   - ./gradlew publishToMavenLocal

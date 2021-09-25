@@ -1,7 +1,12 @@
+import org.gradle.internal.impldep.org.eclipse.jgit.lib.InflaterCache.release
+
 plugins {
     id("com.android.library")
     id("kotlin-android")
+    id("maven-publish")
 }
+
+group = "com.github.GustavoHGAraujo"
 
 android {
     compileSdk = Common.Versions.compileSdk
@@ -35,4 +40,16 @@ android {
 dependencies {
     commonDependencies()
     testDependencies()
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("maven") {
+                groupId = "com.gomagustavo"
+                artifactId = "logger"
+                version = "1.0.0"
+            }
+        }
+    }
 }
