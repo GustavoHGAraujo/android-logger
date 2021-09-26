@@ -6,8 +6,6 @@ plugins {
     id("maven-publish")
 }
 
-group = "com.github.GustavoHGAraujo"
-
 android {
     compileSdk = Common.Versions.compileSdk
     buildToolsVersion = Common.Versions.buildToolsVersion
@@ -40,16 +38,17 @@ android {
 dependencies {
     commonDependencies()
     testDependencies()
+
+    implementation("com.github.jitpack:android-example:1.0.1")
 }
 
-afterEvaluate {
-    publishing {
-        publications {
-            create<MavenPublication>("maven") {
-                groupId = "com.gomagustavo"
-                artifactId = "logger"
-                version = "1.0.0"
-            }
-        }
-    }
-}
+//afterEvaluate {
+//    publishing {
+//        publications {
+//            create<MavenPublication>("maven-publish") {
+//                groupId = "com.github.GustavoHGAraujo"
+//                artifactId = "android-logger"
+//            }
+//        }
+//    }
+//}
